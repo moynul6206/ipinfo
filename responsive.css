@@ -1,0 +1,193 @@
+/* responsive.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3a3d98;
+    background: linear-gradient(45deg, #3a3d98, #f44336);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: calc(100% - 34px);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3a3d98;
+    box-shadow: 0 0 8px rgba(58, 61, 152, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #3a3d98;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #f44336;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+#result {
+    text-align: left;
+    margin-top: 25px;
+}
+
+#result p {
+    background: rgba(58, 61, 152, 0.1);
+    border-left: 4px solid #3a3d98;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+#result a {
+    color: #f44336;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#result a:hover {
+    text-decoration: underline;
+    color: #3a3d98;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    #result p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    #result p {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    #result p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    #result p {
+        font-size: 0.7rem;
+    }
+}
